@@ -102,12 +102,12 @@ button.navbar-toggler {
 }
 
 .info {
-  animation: fadeInUp 1.3s ease-in-out;
+  animation: fadeInUp 2s ease-in-out;
 }
 
-.general {
-  margin-top: 70px;
-}
+/* .general {
+  margin-top: 0px;
+} */
 
 .general_info {
   height: auto;
@@ -115,29 +115,25 @@ button.navbar-toggler {
   padding: 50px;
 }
 
-.image {
-  position: relative;
-}
-
 .animated-image {
-  /* position: absolute; */
+  animation: slideFromLeft 2s ease-in-out forwards;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
   display: block;
+  max-width: 100%;
   margin: auto;
-  /* top: 50%; */
-  left: 0;
-  width: 100px; /* Adjust the width of your image */
-  animation: slideFromLeft 4s ease-in-out forwards;
 }
 
 @keyframes slideFromLeft {
   0% {
     transform: translateX(-100%);
   }
-  25% {
+  /* 25% {
     transform: translateX(25%);
-  }
+  } */
   100% {
-    transform: translateX(25%);
+    transform: translateX(3%);
   }
 }
 
@@ -293,7 +289,7 @@ div.card-body ul li:hover {
   width: 100%;
 }
 
-.soical-icons a i {
+.social-icons a i {
   display: inline-block;
   height: 40px;
   width: 40px;
@@ -303,6 +299,13 @@ div.card-body ul li:hover {
   border: 1px solid #3b3837;
   border-radius: 50%;
   margin-right: 7px;
+  transition: box-shadow 0.3s;
+}
+
+.social-icons a i:hover {
+  position: relative;
+  bottom: 5px;
+  box-shadow: 0 0 10px 5px gold;
 }
 
 /* PAGE UP BUTTON */
