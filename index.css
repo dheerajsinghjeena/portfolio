@@ -187,16 +187,16 @@ div.description {
   margin: auto;
 }
 
-.description-p {
+/* .description-p {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .description-p p {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  text-indent: 50px;
+  /* text-indent: 50px; */
   color: white;
   font-weight: 500;
 }
